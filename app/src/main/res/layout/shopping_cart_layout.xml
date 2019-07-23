@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/list_of_discs_fragment_layout"
+        android:layout_width="360dp"
+        android:layout_height="495dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/my_button"
+        android:text="Zapłać"
+        android:textColor="#FFFF"
+        app:layout_anchor="@+id/layout"
+        app:layout_anchorGravity="bottom|center" />
+
+
+</android.support.design.widget.CoordinatorLayout>

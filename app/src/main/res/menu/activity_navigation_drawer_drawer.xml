@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/lista"
+            android:icon="@drawable/alldiscs"
+            android:title="Albumy" />
+        <item
+            android:id="@+id/koszyk"
+            android:icon="@drawable/dodaj_koszyka"
+            android:title="Koszyk" />
+        <item
+            android:id="@+id/favorites"
+            android:icon="@drawable/ulubione"
+            android:title="Ulubione" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Ustawienia" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Kontakt" />
+        </menu>
+    </item>
+
+</menu>

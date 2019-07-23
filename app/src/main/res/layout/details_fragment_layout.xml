@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:isScrollContainer="true"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpagerForDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="345dp"
+                    android:layout_weight="1"
+                    tools:layout_editor_absoluteX="137dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    app:layout_constraintTop_toBottomOf="@+id/viewpagerForDetails"
+                    app:tabBackground="@drawable/tab_selector"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <Button
+                    android:id="@+id/favoritesBut"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/my_button1"
+                    android:text="ULUBIONE"
+                    android:textColor="#660033"
+                    app:layout_constraintStart_toStartOf="@+id/detailsAuthor"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsYear" />
+
+                <Button
+                    android:id="@+id/cartBut"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/my_button"
+                    android:text="KOSZYK"
+                    android:textColor="#FFFF"
+                    app:layout_constraintEnd_toEndOf="@+id/detailsAuthor"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsYear" />
+
+                <TextView
+                    android:id="@+id/detailsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="nice ass"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toBottomOf="@+id/tabDots"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/detailsAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="textview"
+                    android:textAlignment="textStart"
+                    android:textSize="13dp"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsName"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/detailsYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="textview"
+                    android:textAlignment="textStart"
+                    android:textSize="13dp"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsAuthor"
+                    tools:layout_editor_absoluteX="8dp" />
+
+                <TextView
+                    android:id="@+id/wiecej"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="Więcej informacji o albumie:"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    app:layout_constraintTop_toBottomOf="@+id/favoritesBut"
+                    tools:layout_editor_absoluteX="5dp" />
+
+                <TextView
+                    android:id="@+id/opis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="TextView"
+                    android:textSize="13dp"
+                    app:layout_constraintTop_toBottomOf="@+id/wiecej"
+                    tools:layout_editor_absoluteX="5dp" />
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
